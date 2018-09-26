@@ -1,0 +1,158 @@
+fileFormatVersion: 2
+guid: a6990f1e139e2724d88dbf0926b1c514
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    400000: //RootNode
+    2100000: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_056_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_056_jpg_001
+    2100002: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_030_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_030_jpg_001
+    2100004: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_014_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_014_jpg_001
+    2100006: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_016_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_016_jpg_001
+    2100008: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_018_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_018_jpg_001
+    2100010: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_061_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_061_jpg_001
+    2100012: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_013_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_013_jpg_001
+    2100014: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_017_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_017_jpg_001
+    2100016: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_032_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_032_jpg_001
+    2100018: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_015_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_015_jpg_001
+    2100020: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_037_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_037_jpg_001
+    2100022: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_043_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_043_jpg_001
+    2100024: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_000_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_000_jpg_001
+    2100026: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_025_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_025_jpg_001
+    2100028: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_026_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_026_jpg_001
+    2100030: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_054_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_054_jpg_001
+    2100032: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_007_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_007_jpg_001
+    2100034: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_012_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_012_jpg_001
+    2100036: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_055_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_055_jpg_001
+    2100038: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_062_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_062_jpg_001
+    2100040: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_036_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_036_jpg_001
+    2100042: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_011_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_011_jpg_001
+    2100044: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_023_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_023_jpg_001
+    2100046: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_038_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_038_jpg_001
+    2100048: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_021_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_021_jpg_001
+    2100050: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_047_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_047_jpg_001
+    2100052: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_022_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_022_jpg_001
+    2100054: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_049_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_049_jpg_001
+    2100056: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_051_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_051_jpg_001
+    2100058: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_040_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_040_jpg_001
+    2100060: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_031_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_031_jpg_001
+    2100062: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_008_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_008_jpg_001
+    2100064: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_039_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_039_jpg_001
+    2100066: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_050_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_050_jpg_001
+    2100068: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_046_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_046_jpg_001
+    2100070: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_035_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_035_jpg_001
+    2100072: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_028_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_028_jpg_001
+    2100074: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_033_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_033_jpg_001
+    2100076: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_027_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_027_jpg_001
+    2100078: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_001_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_001_jpg_001
+    2100080: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_003_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_003_jpg_001
+    2100082: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_041_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_041_jpg_001
+    2100084: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_034_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_034_jpg_001
+    2100086: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_005_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_005_jpg_001
+    2100088: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_006_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_006_jpg_001
+    2100090: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_009_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_009_jpg_001
+    2100092: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_029_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_029_jpg_001
+    2100094: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_057_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_057_jpg_001
+    2100096: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_052_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_052_jpg_001
+    2100098: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_019_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_019_jpg_001
+    2100100: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_058_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_058_jpg_001
+    2100102: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_060_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_060_jpg_001
+    2100104: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_042_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_042_jpg_001
+    2100106: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_045_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_045_jpg_001
+    2100108: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_053_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_053_jpg_001
+    2100110: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_004_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_004_jpg_001
+    2100112: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_059_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_059_jpg_001
+    2100114: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_020_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_020_jpg_001
+    2100116: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_002_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_002_jpg_001
+    2100118: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_048_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_048_jpg_001
+    2100120: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_024_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_024_jpg_001
+    2100122: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_010_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_010_jpg_001
+    2100124: 3ce4284a4cbe4ed5b9ab0bdb86bdf306_044_jpg__3ce4284a4cbe4ed5b9ab0bdb86bdf306_044_jpg_001
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: chunk007_group000_001
+    7400000: Default Take
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

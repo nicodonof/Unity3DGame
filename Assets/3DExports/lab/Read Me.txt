@@ -1,0 +1,8 @@
+To get textures to work properly in Blender (2.43):
+1: Hit F6 to go to the textures panel
+2: Press the folder and navigate the proper texture.
+3: Blender will load the texure from that location instead of the previous location. All settings will be where they should be.
+
+For help on what texture you need, look at the address bar (before you change it), and you should see "Rocky Wall.jpg", etc.
+Use the corresponding texture.
+You can also use the preview image on Turbo Squid for reference.
