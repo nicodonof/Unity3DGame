@@ -15,7 +15,7 @@ public class ballScript : MonoBehaviour {
 		t += Time.deltaTime;
 		if (t < 1.0f)
 		{
-			GetComponent<Rigidbody>().velocity = new Vector3(30, 0, 0);
+			GetComponent<Rigidbody>().velocity = new Vector3(10, 0, 0);
 		}
 	}
 }
