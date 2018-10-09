@@ -7,15 +7,10 @@ public class ballScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
+		GetComponent<Rigidbody>().AddForce(Vector3.forward * 1000);
 	}
 
 	// Update is called once per frame
 	void Update () {
-		t += Time.deltaTime;
-		if (t < 1.0f)
-		{
-			GetComponent<Rigidbody>().velocity = new Vector3(10, 0, 0);
-		}
 	}
 }
