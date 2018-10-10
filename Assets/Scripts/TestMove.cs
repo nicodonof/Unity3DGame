@@ -40,6 +40,7 @@ public class TestMove : MonoBehaviour {
 		}else if(Input.GetMouseButtonUp(0) && mouseDown){
 			Vector3 dir = new Vector3(whiteBall.transform.position.x - transform.position.x, 0f, whiteBall.transform.position.z - transform.position.z);
 			whiteBall.GetComponent<Rigidbody>().AddForce(dir*mouseDownTimer*60);
+			tm.Changed = false;
 			mouseDownTimer = 0;
 			mouseDown = false;
 		}else if(mouseDown){
@@ -56,11 +57,6 @@ public class TestMove : MonoBehaviour {
 		float newZ = whiteBall.transform.position.z + radius * Mathf.Cos(angle);
 		float newX = whiteBall.transform.position.x + radius * -Mathf.Sin(angle);
 		transform.position = new Vector3(newX, 14.4f, newZ);
-		if (Input.GetMouseButtonDown(0)) {
-			Vector3 dir = new Vector3(whiteBall.transform.position.x - transform.position.x, 0f, whiteBall.transform.position.z - transform.position.z);
-			whiteBall.GetComponent<Rigidbody>().AddForce(dir*50f);
-			tm.Changed = false;
-		}
 	}
 
 }

@@ -41,7 +41,7 @@ public class BallScript : MonoBehaviour {
 	void Update () {
 		lastVelocity = rigid.velocity;
 		if(rigid.velocity.magnitude <= 0.8f && rigid.velocity.magnitude > 0.0001) {
-			print(rigid.velocity.magnitude);
+			//print(rigid.velocity.magnitude);
 			rigid.velocity = new Vector3(0,0,0);
 			if (CompareTag("WhiteBall")) {
 				//mostrar palo

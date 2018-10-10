@@ -6,9 +6,9 @@ public class TurnManager : MonoBehaviour {
 	public int CurrentTurn;
 
 	public int PlayerOne;
-	
+
 	public int PlayerTwo;
-	
+
 	public bool Fault;
 
 	public bool MoveFault;
@@ -18,18 +18,18 @@ public class TurnManager : MonoBehaviour {
 	public Text turn;
 
 	public bool Changed;
-	
+
 	// Use this for initialization
 	void Start () {
 		PlayerOne = 0;
 		PlayerTwo = 0;
 		Changed = false;
 	}
-	
-	
+
+
 	// Update is called once per frame
 	void Update () {
-		turn.text = CurrentTurn.ToString();
+		//turn.text = CurrentTurn.ToString();
 	}
 
 	public void ChangeTurn() {
