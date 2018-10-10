@@ -1,24 +1,38 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class ballScript : MonoBehaviour {
 	private Rigidbody rigid;
 	private Vector3 lastVelocity;
 
 	// Use this for initialization
+	private TurnManager tm;
+	
 	void Start () {
+<<<<<<< HEAD
 		rigid = GetComponent<Rigidbody>();
+=======
+		tm = GameObject.Find("TurnManager").GetComponent<TurnManager>();
+>>>>>>> created scripts folder, deleted fucking trees
 	}
 
 	// Update is called once per frame
+
 	void Update () {
+<<<<<<< HEAD
 		print(rigid.velocity.magnitude);
 		lastVelocity = rigid.velocity;
 		if(rigid.velocity.magnitude <= 0.8f){
 			rigid.velocity = new Vector3(0,0,0);
 		}else if(rigid.velocity.magnitude >= 20f && lastVelocity.magnitude > 0.8f){
 			rigid.velocity = lastVelocity;
+=======
+		//dentro de cunado frena la bola
+		//en realidad deberia ser cuando todas las bolas frenan
+		if (CompareTag("WhiteBall")) {
+			//mostrar palo
+			//cambiar de turno
+			tm.ChangeTurn();
+>>>>>>> created scripts folder, deleted fucking trees
 		}
 	}
 }

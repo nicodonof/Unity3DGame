@@ -8,12 +8,14 @@ public class TestMove : MonoBehaviour {
 	private RaycastHit hit;
 	private Ray ray;
 	private GameObject whiteBall;
+	private TurnManager tm;
 
 	// Use this for initialization
 	void Start () {
 		whiteBall = GameObject.FindGameObjectWithTag("WhiteBall");
 		cam = Camera.main.GetComponent<Camera>();
-//		GetComponent<Rigidbody>().velocity = new Vector3(-5,0,5);
+		tm = GameObject.Find("TurnManager").GetComponent<TurnManager>();
+
 	}
 
 	// Update is called once per frame
