@@ -12,6 +12,12 @@ public class HoleScript : MonoBehaviour {
   }
 
 	void OnTriggerEnter(Collider other){
+    switch (other.tag){
+      case "WhiteBall":break;
+      case "BlackBall":break;
+      case "PlainBall":
+      case "StripeBall":break;
+    }
 		//print(other.name);
 	}
 }

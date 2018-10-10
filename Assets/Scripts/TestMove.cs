@@ -40,6 +40,8 @@ public class TestMove : MonoBehaviour {
 		}else if(Input.GetMouseButtonUp(0) && mouseDown){
 			Vector3 dir = new Vector3(whiteBall.transform.position.x - transform.position.x, 0f, whiteBall.transform.position.z - transform.position.z);
 			whiteBall.GetComponent<Rigidbody>().AddForce(dir*mouseDownTimer*60);
+			BallScript ballScript = whiteBall.GetComponent<BallScript>();
+			whiteBall.transform.position = new Vector3(whiteBall.transform.position.x, ((Vector3)BallScript.InitBallPositions[ballScript.BallNumber]).y, whiteBall.transform.position.z);
 			tm.Changed = false;
 			mouseDownTimer = 0;
 			mouseDown = false;
