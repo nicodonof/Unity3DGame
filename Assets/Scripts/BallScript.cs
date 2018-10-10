@@ -6,7 +6,7 @@ public class BallScript : MonoBehaviour {
 	private Vector3 lastVelocity;
 
 	private WhiteBall whiteBall;
-	
+
 	// Initial balls positions X, Z in ball number order
 	private static ArrayList initBallPositions = new ArrayList{
 		new Vector2(0,20), //WhiteBall
@@ -39,7 +39,6 @@ public class BallScript : MonoBehaviour {
 	// Update is called once per frame
 
 	void Update () {
-//		print(rigid.velocity.magnitude);
 		lastVelocity = rigid.velocity;
 		if(rigid.velocity.magnitude <= 0.8f && rigid.velocity.magnitude > 0.0001) {
 			print(rigid.velocity.magnitude);
