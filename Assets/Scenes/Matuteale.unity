@@ -129,7 +129,7 @@ GameObject:
   - component: {fileID: 23250087}
   m_Layer: 0
   m_Name: Ball (1)
-  m_TagString: Untagged
+  m_TagString: PlainBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -468,7 +468,7 @@ GameObject:
   - component: {fileID: 248492934}
   m_Layer: 0
   m_Name: Ball (11)
-  m_TagString: Untagged
+  m_TagString: StripeBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -587,7 +587,7 @@ GameObject:
   - component: {fileID: 524451924}
   m_Layer: 0
   m_Name: Ball (4)
-  m_TagString: Untagged
+  m_TagString: PlainBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -706,7 +706,7 @@ GameObject:
   - component: {fileID: 583975844}
   m_Layer: 0
   m_Name: Ball (6)
-  m_TagString: Untagged
+  m_TagString: PlainBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1005,7 +1005,7 @@ GameObject:
   - component: {fileID: 696506973}
   m_Layer: 0
   m_Name: Ball (3)
-  m_TagString: Untagged
+  m_TagString: PlainBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1438,7 +1438,7 @@ GameObject:
   - component: {fileID: 918916303}
   m_Layer: 0
   m_Name: Ball (12)
-  m_TagString: Untagged
+  m_TagString: StripeBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1557,7 +1557,7 @@ GameObject:
   - component: {fileID: 944566312}
   m_Layer: 0
   m_Name: Ball (7)
-  m_TagString: Untagged
+  m_TagString: PlainBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1843,7 +1843,7 @@ GameObject:
   - component: {fileID: 1248742284}
   m_Layer: 0
   m_Name: Ball (15)
-  m_TagString: Untagged
+  m_TagString: StripeBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2063,7 +2063,7 @@ GameObject:
   - component: {fileID: 1273772366}
   m_Layer: 0
   m_Name: Ball (8)
-  m_TagString: Untagged
+  m_TagString: BlackBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2182,7 +2182,7 @@ GameObject:
   - component: {fileID: 1372939361}
   m_Layer: 0
   m_Name: Ball (9)
-  m_TagString: Untagged
+  m_TagString: StripeBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2301,7 +2301,7 @@ GameObject:
   - component: {fileID: 1410226187}
   m_Layer: 0
   m_Name: Ball (13)
-  m_TagString: Untagged
+  m_TagString: StripeBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2420,7 +2420,7 @@ GameObject:
   - component: {fileID: 1480830010}
   m_Layer: 0
   m_Name: Ball (5)
-  m_TagString: Untagged
+  m_TagString: PlainBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2732,6 +2732,8 @@ MonoBehaviour:
   PlayerTwo: 0
   Fault: 0
   MoveFault: 0
+  turn: {fileID: 0}
+  Changed: 0
 --- !u!4 &1734808439
 Transform:
   m_ObjectHideFlags: 0
@@ -2896,7 +2898,7 @@ GameObject:
   - component: {fileID: 1881108591}
   m_Layer: 0
   m_Name: Ball (2)
-  m_TagString: Untagged
+  m_TagString: PlainBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3116,7 +3118,7 @@ GameObject:
   - component: {fileID: 2008921267}
   m_Layer: 0
   m_Name: Ball (10)
-  m_TagString: Untagged
+  m_TagString: StripeBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3235,7 +3237,7 @@ GameObject:
   - component: {fileID: 2032145779}
   m_Layer: 0
   m_Name: Ball (14)
-  m_TagString: Untagged
+  m_TagString: StripeBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
