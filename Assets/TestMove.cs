@@ -31,7 +31,7 @@ public class TestMove : MonoBehaviour {
 		transform.position = new Vector3(newX, 14.4f, newZ);
 		if (Input.GetMouseButtonDown(0)) {
 			Vector3 dir = new Vector3(whiteBall.transform.position.x - transform.position.x, 0f, whiteBall.transform.position.z - transform.position.z);
-			whiteBall.GetComponent<Rigidbody>().AddForce(dir*100f);
+			whiteBall.GetComponent<Rigidbody>().AddForce(dir*20f);
 		}
 	}
 
