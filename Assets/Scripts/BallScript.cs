@@ -5,6 +5,8 @@ public class BallScript : MonoBehaviour {
 	private Rigidbody rigid;
 	private Vector3 lastVelocity;
 
+	private WhiteBall whiteBall;
+	
 	// Initial balls positions X, Z in ball number order
 	private static ArrayList initBallPositions = new ArrayList{
 		new Vector2(0,20), //WhiteBall
@@ -31,24 +33,25 @@ public class BallScript : MonoBehaviour {
 	void Start () {
 		rigid = GetComponent<Rigidbody>();
 		tm = GameObject.Find("TurnManager").GetComponent<TurnManager>();
+		whiteBall = GetComponent<WhiteBall>();
 	}
 
 	// Update is called once per frame
 
 	void Update () {
-		print(rigid.velocity.magnitude);
+//		print(rigid.velocity.magnitude);
 		lastVelocity = rigid.velocity;
-		if(rigid.velocity.magnitude <= 0.8f){
+		if(rigid.velocity.magnitude <= 0.8f && rigid.velocity.magnitude > 0.0001) {
+			print(rigid.velocity.magnitude);
 			rigid.velocity = new Vector3(0,0,0);
 			if (CompareTag("WhiteBall")) {
 				//mostrar palo
 				//cambiar de turno
+				whiteBall.First = 0;
 				tm.ChangeTurn();
 			}
 		} else if (rigid.velocity.magnitude >= 20f && lastVelocity.magnitude > 0.8f) {
 			rigid.velocity = lastVelocity;
-			//dentro de cunado frena la bola
-			//en realidad deberia ser cuando todas las bolas frenan
 
 		}
 	}

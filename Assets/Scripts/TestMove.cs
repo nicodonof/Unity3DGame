@@ -34,6 +34,7 @@ public class TestMove : MonoBehaviour {
 		if (Input.GetMouseButtonDown(0)) {
 			Vector3 dir = new Vector3(whiteBall.transform.position.x - transform.position.x, 0f, whiteBall.transform.position.z - transform.position.z);
 			whiteBall.GetComponent<Rigidbody>().AddForce(dir*50f);
+			tm.Changed = false;
 		}
 	}
 
