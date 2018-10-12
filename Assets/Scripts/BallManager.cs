@@ -36,6 +36,7 @@ public class BallManager : MonoBehaviour {
 			balls[i].name = i==0? "whiteBall" : "Ball_" + i;
 			balls[i].transform.position = InitBallPositions[i];
 			balls[i].GetComponent<BallScript>().BallNumber = i;
+			balls[i].transform.SetParent(transform);
 		}
 		tm = GameObject.Find("TurnManager").GetComponent<TurnManager>();
 		
