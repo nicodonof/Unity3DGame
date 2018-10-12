@@ -167,6 +167,11 @@ Prefab:
       propertyPath: m_AngularDrag
       value: 0.9
       objectReference: {fileID: 0}
+    - target: {fileID: 114666714405572104, guid: 793db47b5847d4e78b47a8d39fc0077f,
+        type: 2}
+      propertyPath: BallInfo
+      value: 
+      objectReference: {fileID: 1391830506}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 793db47b5847d4e78b47a8d39fc0077f, type: 2}
   m_IsPrefabAsset: 0
@@ -241,6 +246,11 @@ Prefab:
       propertyPath: m_Drag
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 114308294177931888, guid: f6b251f3444964b0980eab4203220ca0,
+        type: 2}
+      propertyPath: BallInfo
+      value: 
+      objectReference: {fileID: 1391830506}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6b251f3444964b0980eab4203220ca0, type: 2}
   m_IsPrefabAsset: 0
@@ -298,6 +308,11 @@ Prefab:
       propertyPath: m_AngularDrag
       value: 0.9
       objectReference: {fileID: 0}
+    - target: {fileID: 114860513167879960, guid: c5495bf0783234728859a70d6183aff4,
+        type: 2}
+      propertyPath: BallInfo
+      value: 
+      objectReference: {fileID: 1391830506}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5495bf0783234728859a70d6183aff4, type: 2}
   m_IsPrefabAsset: 0
@@ -355,9 +370,76 @@ Prefab:
       propertyPath: m_AngularDrag
       value: 0.9
       objectReference: {fileID: 0}
+    - target: {fileID: 114417307617601820, guid: e6cbb9bf2287a40f2af665e59fa9b1c9,
+        type: 2}
+      propertyPath: BallInfo
+      value: 
+      objectReference: {fileID: 1391830506}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6cbb9bf2287a40f2af665e59fa9b1c9, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &414366739
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 414366742}
+  - component: {fileID: 414366741}
+  - component: {fileID: 414366740}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &414366740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 414366739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &414366741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 414366739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &414366742
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 414366739}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &736954568
 Prefab:
   m_ObjectHideFlags: 0
@@ -471,6 +553,11 @@ Prefab:
       propertyPath: m_AngularDrag
       value: 0.9
       objectReference: {fileID: 0}
+    - target: {fileID: 114465559661838430, guid: d8f8b46d1a2d04608b245a3392be648e,
+        type: 2}
+      propertyPath: BallInfo
+      value: 
+      objectReference: {fileID: 1391830506}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8f8b46d1a2d04608b245a3392be648e, type: 2}
   m_IsPrefabAsset: 0
@@ -528,6 +615,11 @@ Prefab:
       propertyPath: m_Drag
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 114107888891365044, guid: 8d181fe53f2554134887506020e3da9b,
+        type: 2}
+      propertyPath: BallInfo
+      value: 
+      objectReference: {fileID: 1391830506}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d181fe53f2554134887506020e3da9b, type: 2}
   m_IsPrefabAsset: 0
@@ -585,6 +677,11 @@ Prefab:
       propertyPath: m_AngularDrag
       value: 0.9
       objectReference: {fileID: 0}
+    - target: {fileID: 114603818957992228, guid: 69bf133b29fc342a6a755224e4bae3a4,
+        type: 2}
+      propertyPath: BallInfo
+      value: 
+      objectReference: {fileID: 1391830506}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69bf133b29fc342a6a755224e4bae3a4, type: 2}
   m_IsPrefabAsset: 0
@@ -642,6 +739,11 @@ Prefab:
       propertyPath: m_AngularDrag
       value: 0.9
       objectReference: {fileID: 0}
+    - target: {fileID: 114464343412393950, guid: e185ee0ff61a345abb9ad43ffebe6c5d,
+        type: 2}
+      propertyPath: BallInfo
+      value: 
+      objectReference: {fileID: 1391830506}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e185ee0ff61a345abb9ad43ffebe6c5d, type: 2}
   m_IsPrefabAsset: 0
@@ -765,9 +867,89 @@ Prefab:
       propertyPath: m_Drag
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 114341616189239092, guid: e7eef1ddb159e4b4e9f768291a719f0f,
+        type: 2}
+      propertyPath: BallInfo
+      value: 
+      objectReference: {fileID: 1391830506}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7eef1ddb159e4b4e9f768291a719f0f, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1391830504
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1391830505}
+  - component: {fileID: 1391830507}
+  - component: {fileID: 1391830506}
+  m_Layer: 5
+  m_Name: BallInfo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1391830505
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1391830504}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1816534063}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -8, y: 23}
+  m_SizeDelta: {x: 50, y: 4}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1391830506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1391830504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 3
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 5
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &1391830507
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1391830504}
+  m_CullTransparentMesh: 0
 --- !u!1001 &1642196276
 Prefab:
   m_ObjectHideFlags: 0
@@ -822,6 +1004,11 @@ Prefab:
       propertyPath: m_AngularDrag
       value: 0.9
       objectReference: {fileID: 0}
+    - target: {fileID: 114877397426894722, guid: f6631a362c2e14be69827280e8cd0fd6,
+        type: 2}
+      propertyPath: BallInfo
+      value: 
+      objectReference: {fileID: 1391830506}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6631a362c2e14be69827280e8cd0fd6, type: 2}
   m_IsPrefabAsset: 0
@@ -879,6 +1066,11 @@ Prefab:
       propertyPath: m_AngularDrag
       value: 0.9
       objectReference: {fileID: 0}
+    - target: {fileID: 114743172249229452, guid: 57ba6246175774cc08a4ef1b886e584e,
+        type: 2}
+      propertyPath: BallInfo
+      value: 
+      objectReference: {fileID: 1391830506}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57ba6246175774cc08a4ef1b886e584e, type: 2}
   m_IsPrefabAsset: 0
@@ -983,6 +1175,11 @@ Prefab:
       propertyPath: m_Drag
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 114934064781902974, guid: 6a5156def1141475eb04ef45cf43b41b,
+        type: 2}
+      propertyPath: BallInfo
+      value: 
+      objectReference: {fileID: 1391830506}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a5156def1141475eb04ef45cf43b41b, type: 2}
   m_IsPrefabAsset: 0
@@ -1117,9 +1314,108 @@ Prefab:
       propertyPath: m_AngularDrag
       value: 0.9
       objectReference: {fileID: 0}
+    - target: {fileID: 114946517590444958, guid: c4a4d4db8bf354732b45312b5bc02299,
+        type: 2}
+      propertyPath: BallInfo
+      value: 
+      objectReference: {fileID: 1391830506}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4a4d4db8bf354732b45312b5bc02299, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1816534059
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1816534063}
+  - component: {fileID: 1816534062}
+  - component: {fileID: 1816534061}
+  - component: {fileID: 1816534060}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1816534060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1816534059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1816534061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1816534059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 100
+--- !u!223 &1816534062
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1816534059}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 1793244584}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &1816534063
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1816534059}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1391830505}
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 70, y: 60}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1882237165
 Prefab:
   m_ObjectHideFlags: 0
@@ -1174,6 +1470,11 @@ Prefab:
       propertyPath: m_AngularDrag
       value: 0.9
       objectReference: {fileID: 0}
+    - target: {fileID: 114689947272563060, guid: 43f5d856572204bacb3d3d43622ca7a7,
+        type: 2}
+      propertyPath: BallInfo
+      value: 
+      objectReference: {fileID: 1391830506}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43f5d856572204bacb3d3d43622ca7a7, type: 2}
   m_IsPrefabAsset: 0
@@ -1231,6 +1532,11 @@ Prefab:
       propertyPath: m_AngularDrag
       value: 0.9
       objectReference: {fileID: 0}
+    - target: {fileID: 114161698393507600, guid: c7607ddcbd5e84476ad8f3c1e4dce7eb,
+        type: 2}
+      propertyPath: BallInfo
+      value: 
+      objectReference: {fileID: 1391830506}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7607ddcbd5e84476ad8f3c1e4dce7eb, type: 2}
   m_IsPrefabAsset: 0
@@ -1288,6 +1594,11 @@ Prefab:
       propertyPath: m_AngularDrag
       value: 0.9
       objectReference: {fileID: 0}
+    - target: {fileID: 114360398299886514, guid: 060d2eafc84f044e1bad8584fcdd67a9,
+        type: 2}
+      propertyPath: BallInfo
+      value: 
+      objectReference: {fileID: 1391830506}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 060d2eafc84f044e1bad8584fcdd67a9, type: 2}
   m_IsPrefabAsset: 0

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class BallScript : MonoBehaviour {
 	private Rigidbody rigid;
@@ -34,10 +35,13 @@ public class BallScript : MonoBehaviour {
 
 	public int BallNumber;
 
+	public Text BallInfo;
+
 	void Start () {
 		rigid = GetComponent<Rigidbody>();
 		tm = GameObject.Find("TurnManager").GetComponent<TurnManager>();
 		whiteBall = GetComponent<WhiteBall>();
+		BallInfo.text = "";
 	}
 
 	// Update is called once per frame
@@ -65,5 +69,15 @@ public class BallScript : MonoBehaviour {
 			rigid.velocity = lastVelocity;
 
 		}
+	}
+
+	void OnMouseOver(){
+		if(tag != "WhiteBall"){
+			BallInfo.text = "Ball: " + BallNumber.ToString() + " (" + tag + ")";
+		}
+	}
+
+  void OnMouseExit(){
+		BallInfo.text = "";
 	}
 }
