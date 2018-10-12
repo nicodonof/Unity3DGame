@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 136791881456451658}
   m_Layer: 0
   m_Name: HoleBR
-  m_TagString: Untagged
+  m_TagString: Hole
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60,7 +60,7 @@ GameObject:
   - component: {fileID: 136836956452077126}
   m_Layer: 0
   m_Name: HoleTL
-  m_TagString: Untagged
+  m_TagString: Hole
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 136940032595719974}
   m_Layer: 0
   m_Name: HoleBM
-  m_TagString: Untagged
+  m_TagString: Hole
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -164,7 +164,7 @@ GameObject:
   - component: {fileID: 136564926718537056}
   m_Layer: 0
   m_Name: HoleTR
-  m_TagString: Untagged
+  m_TagString: Hole
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -201,7 +201,7 @@ GameObject:
   - component: {fileID: 136429722145377692}
   m_Layer: 0
   m_Name: HoleBL
-  m_TagString: Untagged
+  m_TagString: Hole
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -236,7 +236,7 @@ GameObject:
   - component: {fileID: 136385244192289354}
   m_Layer: 0
   m_Name: HoleTM
-  m_TagString: Untagged
+  m_TagString: Hole
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -721,7 +721,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 126
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!64 &64548259908846232
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -813,6 +813,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2c4f910d43eab3439c462bbad0e00df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  show: 1
 --- !u!136 &136385244192289354
 CapsuleCollider:
   m_ObjectHideFlags: 1

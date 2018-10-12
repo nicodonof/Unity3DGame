@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -8,66 +9,69 @@ public class BallScript : MonoBehaviour {
 
 	private WhiteBall whiteBall;
 
+	public bool stopped = true;
+
 	// Initial balls positions X, Z in ball number order
-	public static ArrayList InitBallPositions = new ArrayList{
-		new Vector3(12, 14.15235f, 0), //WhiteBall
-		new Vector3(-11.7f, 14.15235f,-1), //Ball 1
-		new Vector3(-13.5f, 14.15235f, 1), //Ball 2
-		new Vector3(-12.6f, 14.15235f, -0.51f), //Ball 3
-		new Vector3(-13.5f, 14.15235f, -1), //Ball 4
-		new Vector3(-13.5f, 14.15235f, -2), //Ball 5
-		new Vector3(-12.6f, 14.15235f, 1.53f), //Ball 6
-		new Vector3(-10.9f, 14.15235f, 0.51f), //Ball 7
-		new Vector3(-11.7f, 14.15235f, 0), //Ball 8
-		new Vector3(-10, 14.15235f, 0), //Ball 9
-		new Vector3(-12.6f, 14.15235f, 0.51f), //Ball 10
-		new Vector3(-13.5f, 14.15235f, 2), //Ball 11
-		new Vector3(-10.9f, 14.15235f, -0.51f), //Ball 12
-		new Vector3(-13.5f, 14.15235f, 0), //Ball 13
-		new Vector3(-12.6f, 14.15235f, -1.53f), //Ball 14
-		new Vector3(-11.7f, 14.15235f, 1), //Ball 15
-		};
 	private float minHeight = 10;
 	private float maxHeight = 14.15235f;
 
 	// Use this for initialization
 	private TurnManager tm;
 
+	public bool holed;
+
+	private Text BallInfo;
+
 	public int BallNumber;
 
-	public Text BallInfo;
-
-	void Start () {
+	void Start() {
 		rigid = GetComponent<Rigidbody>();
 		tm = GameObject.Find("TurnManager").GetComponent<TurnManager>();
 		whiteBall = GetComponent<WhiteBall>();
+		BallInfo = GameObject.Find("BallInfo").GetComponent<Text>();
 		BallInfo.text = "";
+		holed = false;
 	}
 
 	// Update is called once per frame
 
-	void Update () {
+	void Update() {
 
-		if(transform.position.y <= minHeight){
-			transform.position = (Vector3)InitBallPositions[BallNumber];
-			rigid.velocity = new Vector3(0,0,0);
-		}else if(transform.position.y > maxHeight){
+		if (transform.position.y <= minHeight) {
+			rigid.velocity = new Vector3(0, 0, 0);
+		}
+		else if (transform.position.y > maxHeight) {
 			transform.position = new Vector3(transform.position.x, maxHeight, transform.position.z);
 		}
 
 		lastVelocity = rigid.velocity;
-		if(rigid.velocity.magnitude <= 0.8f && rigid.velocity.magnitude > 0.0001) {
+		if (rigid.velocity.magnitude <= 0.8f && rigid.velocity.magnitude > 0.0001f) {
 			//print(rigid.velocity.magnitude);
-			rigid.velocity = new Vector3(0,0,0);
+			if (!stopped) {
+				stopped = true;
+			}
+
+			rigid.velocity = new Vector3(0, 0, 0);
 			if (CompareTag("WhiteBall")) {
 				//mostrar palo
 				//cambiar de turno
 				whiteBall.First = 0;
-				tm.ChangeTurn();
+//				tm.ChangeTurn();
 			}
-		} else if (rigid.velocity.magnitude >= 20f && lastVelocity.magnitude > 0.8f) {
+		}
+		else if (rigid.velocity.magnitude >= 20f && lastVelocity.magnitude > 0.8f) {
 			rigid.velocity = lastVelocity;
+		}
+		else if (rigid.velocity.magnitude > 0.01f) {
+			stopped = false;
+		}
+	}
 
+	private void OnTriggerEnter(Collider other) {
+//		print(other.tag);
+		if (other.CompareTag("Hole")) {
+			tm.inBall(tag);
+			holed = true;
 		}
 	}
 
@@ -77,13 +81,17 @@ public class BallScript : MonoBehaviour {
 		}
 	}
 
-	void OnMouseOver(){
-		if(tag != "WhiteBall"){
-			BallInfo.text = "Ball: " + BallNumber.ToString() + " (" + tag + ")";
+	void OnMouseOver() {
+		if (tag != "WhiteBall") {
+			BallInfo.text = "Ball: " + BallNumber + " (" + tag + ")";
 		}
 	}
 
-  void OnMouseExit(){
+	void OnMouseExit() {
 		BallInfo.text = "";
+	}
+
+	public Boolean isStopped() {
+		return stopped || holed;
 	}
 }

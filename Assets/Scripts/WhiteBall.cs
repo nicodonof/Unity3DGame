@@ -15,7 +15,7 @@ public class WhiteBall : MonoBehaviour {
 		if (First == 0) {
 			First = tagToInt(other.gameObject.tag);
 			if (First != 0) {
-				if ((tm.CurrentTurn == 1 && First != tm.PlayerOne) || (tm.CurrentTurn == 2 && First != tm.PlayerTwo)) {
+				if ((tm.CurrentTurn == 1 && First != tm.PlayerOne && tm.PlayerOne != 0) || (tm.CurrentTurn == 2 && First != tm.PlayerTwo && tm.PlayerTwo != 0)) {
 					tm.Fault = true;
 				}
 			}
