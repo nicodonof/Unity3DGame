@@ -71,6 +71,12 @@ public class BallScript : MonoBehaviour {
 		}
 	}
 
+	private void OnCollisionEnter(Collision other) {
+		if (other.gameObject.tag == "HoleWall") {
+			rigid.velocity = new Vector3(0, -5, 0);
+		}
+	}
+
 	void OnMouseOver(){
 		if(tag != "WhiteBall"){
 			BallInfo.text = "Ball: " + BallNumber.ToString() + " (" + tag + ")";
