@@ -8,7 +8,7 @@ public class TestMove : MonoBehaviour {
 	private GameObject whiteBall;
 	private TurnManager tm;
 	private BallManager bm;
-	
+
 
 	private Boolean mouseDown;
 	private float mouseDownTimer;
@@ -26,6 +26,9 @@ public class TestMove : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+		if(Time.timeScale == 0){
+			return;
+		}
 		if (show) {
 
 			Vector3 mousep = Input.mousePosition;
