@@ -11,6 +11,7 @@ public class TestMove : MonoBehaviour {
 	private TurnManager tm;
 	private BallManager bm;
 
+	private AudioSource TacoBallHit;
 
 	private Boolean mouseDown;
 	private float mouseDownTimer;
@@ -20,6 +21,8 @@ public class TestMove : MonoBehaviour {
 	public bool show = true;
 	// Use this for initialization
 	void Start () {
+		TacoBallHit = GameObject.Find("TacoBallHit").GetComponent<AudioSource>();
+		TacoBallHit.velocityUpdateMode = AudioVelocityUpdateMode.Dynamic;
 		whiteBall = GameObject.FindGameObjectWithTag("WhiteBall");
 		cam = Camera.main.GetComponent<Camera>();
 		tm = GameObject.Find("TurnManager").GetComponent<TurnManager>();
@@ -48,6 +51,8 @@ public class TestMove : MonoBehaviour {
 			} else if (Input.GetMouseButtonUp(0) && mouseDown) {
 				Vector3 dir = new Vector3(whiteBall.transform.position.x - transform.position.x, 0f,
 					whiteBall.transform.position.z - transform.position.z);
+				TacoBallHit.volume = 0.7f * (mouseDownTimer / maxMouseDownTimer);
+				TacoBallHit.Play(0);
 				whiteBall.GetComponent<Rigidbody>().AddForce(dir * mouseDownTimer * 100);
 				whiteBall.GetComponent<BallScript>().stopped = false;
 				tm.Changed = false;

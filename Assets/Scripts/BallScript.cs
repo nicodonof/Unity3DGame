@@ -24,7 +24,13 @@ public class BallScript : MonoBehaviour {
 
 	public int BallNumber;
 
+	private AudioSource BallHit;
+
+	private float maxVelocity = 20;
+
 	void Start() {
+		BallHit = GameObject.Find("BallBallHit").GetComponent<AudioSource>();
+		BallHit.velocityUpdateMode = AudioVelocityUpdateMode.Dynamic;
 		rigid = GetComponent<Rigidbody>();
 		tm = GameObject.Find("TurnManager").GetComponent<TurnManager>();
 		BallInfo = GameObject.Find("BallInfo").GetComponent<Text>();
@@ -57,7 +63,7 @@ public class BallScript : MonoBehaviour {
 //				tm.ChangeTurn();
 			}
 		}
-		else if (rigid.velocity.magnitude >= 20f && lastVelocity.magnitude > 0.8f) {
+		else if (rigid.velocity.magnitude >= maxVelocity && lastVelocity.magnitude > 0.8f) {
 			rigid.velocity = lastVelocity;
 		}
 		else if (rigid.velocity.magnitude > 0.01f) {
@@ -74,8 +80,20 @@ public class BallScript : MonoBehaviour {
 	}
 
 	private void OnCollisionEnter(Collision other) {
-		if (other.gameObject.tag == "HoleWall") {
+		if (other.gameObject.CompareTag("HoleWall")) {
 			rigid.velocity = new Vector3(0, -5, 0);
+		} else if (BallHit != null && (other.gameObject.CompareTag("WhiteBall")
+						|| other.gameObject.CompareTag("BlackBall")
+						|| other.gameObject.CompareTag("PlainBall")
+						|| other.gameObject.CompareTag("StripeBall"))){
+			BallHit.volume = 0.7f;
+			if(other.relativeVelocity.magnitude < maxVelocity){
+				BallHit.volume = 0.7f * (other.relativeVelocity.magnitude/maxVelocity);
+				if(BallHit.volume < 0.05f){
+					BallHit.volume = 0.05f;
+				}
+			}
+			BallHit.Play(0);
 		}
 	}
 
