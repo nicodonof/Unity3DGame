@@ -54,4 +54,10 @@ public class BallManager : MonoBehaviour {
 			tm.ChangeTurn();
 		}
 	}
+
+	public void resetWhiteBall() {
+		balls[0].GetComponent<Rigidbody>().velocity = new Vector3(0,0,0);
+		balls[0].transform.position = InitBallPositions[0];
+		balls[0].GetComponent<BallScript>().holed = false;
+	}
 }

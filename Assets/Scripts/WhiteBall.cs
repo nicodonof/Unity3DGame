@@ -5,9 +5,10 @@ public class WhiteBall : MonoBehaviour {
 	public int First;
 
 	private TurnManager tm;
-	
+	private BallManager bm;
 	void Start () {
 		tm = GameObject.Find("TurnManager").GetComponent<TurnManager>();
+		bm = GetComponentInParent<BallManager>();
 	}
 	
 
@@ -19,6 +20,12 @@ public class WhiteBall : MonoBehaviour {
 					tm.Fault = true;
 				}
 			}
+		}
+	}
+
+	private void OnTriggerEnter(Collider other) {
+		if (other.CompareTag("Hole")) {
+			bm.resetWhiteBall();
 		}
 	}
 
