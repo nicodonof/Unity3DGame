@@ -23,6 +23,8 @@ public class TurnManager : MonoBehaviour {
 	public bool Changed;
 	private TestMove tb;
 	private List<string> currentTurnBallsIn;
+
+	public WhiteBall wb;
 	// Use this for initialization
 	void Start () {
 		PlayerOne = 0;
@@ -34,7 +36,7 @@ public class TurnManager : MonoBehaviour {
 		playerTwo = GameObject.Find("PlayerTwo").GetComponent<Text>();
 		fault = GameObject.Find("Fault").GetComponent<Text>();
 		tb = GameObject.Find("taco bilha").GetComponent<TestMove>();
-
+//		wb = GameObject.Find("whiteBall").GetComponent<WhiteBall>();
 	}
 
 
@@ -51,7 +53,11 @@ public class TurnManager : MonoBehaviour {
 			Changed = true;
 			tb.show = true;
 //			tb.transform.position = new Vector3(0f, 100f, 0f);
-			
+			if (wb.First == 0) {
+				Fault = true;
+			}
+			wb.First = 0;
+
 			if (Fault || MoveFault) { //si hizo falta en este tiro le doy al otro 2 tiros
 				CurrentTurn = CurrentTurn == 1 ? 2 : 1;
 				currentTurnBallsIn.Clear();

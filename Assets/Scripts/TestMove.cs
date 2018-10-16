@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TestMove : MonoBehaviour {
+	private const float MinForce = 0.050f;
+	
 	private Camera cam;
 	private GameObject whiteBall;
 	private TurnManager tm;
@@ -26,7 +28,7 @@ public class TestMove : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if(Time.timeScale == 0){
+		if(Math.Abs(Time.timeScale) < 0.001f){
 			return;
 		}
 		if (show) {
@@ -38,14 +40,12 @@ public class TestMove : MonoBehaviour {
 
 			transform.eulerAngles = new Vector3(90f, 180f, angle * Mathf.Rad2Deg);
 			if (Input.GetMouseButtonDown(0)) {
-				mouseDownTimer = 0;
+				mouseDownTimer = MinForce;
 				mouseDown = true;
-			}
-			else if (Input.GetMouseButtonDown(1)) {
+			} else if (Input.GetMouseButtonDown(1)) {
 				mouseDownTimer = 0;
 				mouseDown = false;
-			}
-			else if (Input.GetMouseButtonUp(0) && mouseDown) {
+			} else if (Input.GetMouseButtonUp(0) && mouseDown) {
 				Vector3 dir = new Vector3(whiteBall.transform.position.x - transform.position.x, 0f,
 					whiteBall.transform.position.z - transform.position.z);
 				whiteBall.GetComponent<Rigidbody>().AddForce(dir * mouseDownTimer * 100);
@@ -54,8 +54,7 @@ public class TestMove : MonoBehaviour {
 				show = false;
 				mouseDownTimer = 0;
 				mouseDown = false;
-			}
-			else if (mouseDown) {
+			} else if (mouseDown) {
 				if (mouseDownTimer >= maxMouseDownTimer) {
 					mouseDownTimer = maxMouseDownTimer;
 				}
@@ -65,7 +64,7 @@ public class TestMove : MonoBehaviour {
 			}
 
 			float radius = 28f;
-			if (mouseDownTimer != 0) {
+			if (Math.Abs(mouseDownTimer) > 0.001f) {
 				radius += radius * mouseDownTimer / maxMouseDownTimer * 0.2f;
 			}
 

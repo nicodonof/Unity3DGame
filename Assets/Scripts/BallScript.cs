@@ -27,7 +27,6 @@ public class BallScript : MonoBehaviour {
 	void Start() {
 		rigid = GetComponent<Rigidbody>();
 		tm = GameObject.Find("TurnManager").GetComponent<TurnManager>();
-		whiteBall = GetComponent<WhiteBall>();
 		BallInfo = GameObject.Find("BallInfo").GetComponent<Text>();
 		BallInfo.text = "";
 		holed = false;
@@ -55,7 +54,6 @@ public class BallScript : MonoBehaviour {
 			if (CompareTag("WhiteBall")) {
 				//mostrar palo
 				//cambiar de turno
-				whiteBall.First = 0;
 //				tm.ChangeTurn();
 			}
 		}

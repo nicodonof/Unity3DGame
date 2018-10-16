@@ -28,7 +28,7 @@ public class BallManager : MonoBehaviour {
 	private TurnManager tm;
 
 	private TestMove tb;
-	
+
 	// Use this for initialization
 	void Start () {
 		for (int i = 0; i < balls.Length; i++) {
@@ -39,7 +39,7 @@ public class BallManager : MonoBehaviour {
 			balls[i].transform.SetParent(transform);
 		}
 		tm = GameObject.Find("TurnManager").GetComponent<TurnManager>();
-		
+		tm.wb = balls[0].GetComponent<WhiteBall>();
 	}
 	
 	// Update is called once per frame
@@ -52,7 +52,6 @@ public class BallManager : MonoBehaviour {
 		}
 		if (stopped == 16) {
 			tm.ChangeTurn();
-
 		}
 	}
 }
