@@ -40,7 +40,7 @@ public class TurnManager : MonoBehaviour {
 		turn = GameObject.Find("Turn").GetComponent<TextMeshProUGUI>();
 		playerOne = GameObject.Find("PlayerOne").GetComponent<TextMeshProUGUI>();
 		playerTwo = GameObject.Find("PlayerTwo").GetComponent<TextMeshProUGUI>();
-		tb = GameObject.Find("taco bilha").GetComponent<TestMove>();
+		tb = GameObject.Find("Cue").GetComponent<TestMove>();
 //		wb = GameObject.Find("whiteBall").GetComponent<WhiteBall>();
 	}
 
