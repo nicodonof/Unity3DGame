@@ -2,15 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PauseScript : MonoBehaviour {
 
 	private GameObject PausePanel;
+	public GameObject GameEndedPanel;
 
 	// Use this for initialization
 	void Start () {
 		PausePanel = GameObject.Find("PausePanel");
 		PausePanel.SetActive(false);
+		GameEndedPanel = GameObject.Find("GameEndedPanel");
+		GameEndedPanel.SetActive(false);
 	}
 
 	// Update is called once per frame
@@ -36,5 +40,15 @@ public class PauseScript : MonoBehaviour {
 		Time.timeScale = 1;
 		PausePanel.SetActive(false);
 		SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
+	}
+
+	public void RestartGame(){
+		SceneManager.LoadScene("Matuteale", LoadSceneMode.Single);
+	}
+
+	public void ShowGameEndedPanel(string winnerText){
+		Time.timeScale = 0;
+		GameEndedPanel.SetActive(true);
+		GameObject.Find("EndGameText").GetComponent<Text>().text = winnerText;
 	}
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class TestMove : MonoBehaviour {
 	private const float MinForce = 0.050f;
-	
+
 	private Camera cam;
 	private GameObject whiteBall;
 	private TurnManager tm;
@@ -31,13 +31,13 @@ public class TestMove : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if(Math.Abs(Time.timeScale) < 0.001f){
+		if(Math.Abs(Time.timeScale) < 0.001f || Time.timeScale == 0){
 			return;
 		}
 		if (show) {
 
 			Vector3 mousep = Input.mousePosition;
-			Vector3 ballPos = Camera.main.WorldToScreenPoint(whiteBall.transform.position);
+			Vector3 ballPos = cam.WorldToScreenPoint(whiteBall.transform.position);
 
 			float angle = -Mathf.Atan2(mousep.x - ballPos.x, mousep.y - ballPos.y);
 

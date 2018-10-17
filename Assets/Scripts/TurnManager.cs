@@ -46,7 +46,7 @@ public class TurnManager : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-//		turn.text = "player " + (CurrentTurn == 1? "One" : "Two");
+		turn.text = "player " + (CurrentTurn == 1? "One" : "Two");
 		playerOne.text = "Player1: " + (PlayerOne == 1 ? "Plain" : (PlayerOne == 2 ? "Striped": "Black"));
 		playerTwo.text = "Player2: " + (PlayerTwo == 1 ? "Plain" : (PlayerTwo == 2 ? "Striped": "Black"));
 		fault.text = "Fault: " + Fault;
@@ -72,7 +72,7 @@ public class TurnManager : MonoBehaviour {
 				otherFault = false;
 			} else {
 				if (currentTurnBallsIn.Count == 0 || tagToInt(currentTurnBallsIn[0]) != (CurrentTurn == 1 ? PlayerOne: PlayerTwo)) {
-					CurrentTurn = CurrentTurn == 1 ? 2 : 1;					
+					CurrentTurn = CurrentTurn == 1 ? 2 : 1;
 				}
 				currentTurnBallsIn.Clear();
 
@@ -93,6 +93,7 @@ public class TurnManager : MonoBehaviour {
 			}
 			else {
 				turn.text = "Gano Player " + (CurrentTurn == 1 ? 2 : 1);
+				GetComponent<PauseScript>().ShowGameEndedPanel(turn.text);
 			}
 		} else if (ballTag.Equals("WhiteBall")) {
 			Fault = true;
@@ -105,7 +106,7 @@ public class TurnManager : MonoBehaviour {
 				PlayerTwo = 3;
 			}
 		}
-		
+
 		if (plainIn == 7) {
 			if (PlayerOne == 2) {
 				PlayerOne = 3;
@@ -113,7 +114,7 @@ public class TurnManager : MonoBehaviour {
 				PlayerTwo = 3;
 			}
 		}
-		
+
 		currentTurnBallsIn.Add(ballTag);
 		if (CurrentTurn == 1 && PlayerOne == 0 && tagToInt(ballTag) != 3 && tagToInt(ballTag) != 0) {
 			PlayerOne = tagToInt(ballTag);
@@ -123,7 +124,7 @@ public class TurnManager : MonoBehaviour {
 			PlayerOne = PlayerTwo == 1 ? 2 : 1;
 		}
 	}
-	
+
 	private int tagToInt(string tagg) {
 		switch (tagg) {
 			case "BlackBall": return 3;

@@ -41,7 +41,7 @@ public class BallManager : MonoBehaviour {
 		tm = GameObject.Find("TurnManager").GetComponent<TurnManager>();
 		tm.wb = balls[0].GetComponent<WhiteBall>();
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 		int stopped = 0;
