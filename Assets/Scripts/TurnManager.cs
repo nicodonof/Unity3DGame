@@ -86,13 +86,13 @@ public class TurnManager : MonoBehaviour {
 			plainIn++;
 		} else if (ballTag.Equals("BlackBall")) {
 			if (CurrentTurn == 1 && PlayerOne == 3) {
-				playerOne.text = "Gano Player 1";
+				playerOne.text = "Player 1 wins!";
 				GetComponent<PauseScript>().ShowGameEndedPanel(playerOne.text);
 			} else if (CurrentTurn == 2 && PlayerTwo == 3) {
-				playerTwo.text = "Gano Player 2";
+				playerTwo.text = "Player 2 wins!";
 				GetComponent<PauseScript>().ShowGameEndedPanel(playerTwo.text);
 			} else {
-				turn.text = "Gano Player " + (CurrentTurn == 1 ? 2 : 1);
+				turn.text = "Player " + (CurrentTurn == 1 ? 2 : 1) + " wins!";
 				GetComponent<PauseScript>().ShowGameEndedPanel(turn.text);
 			}
 		} else if (ballTag.Equals("WhiteBall")) {
