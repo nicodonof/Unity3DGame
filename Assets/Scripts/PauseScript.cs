@@ -1,13 +1,14 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class PauseScript : MonoBehaviour {
 
 	private GameObject PausePanel;
-	public GameObject GameEndedPanel;
+	private GameObject GameEndedPanel;
 
 	// Use this for initialization
 	void Start () {
@@ -39,17 +40,21 @@ public class PauseScript : MonoBehaviour {
 	public void MainMenu(){
 		Time.timeScale = 1;
 		PausePanel.SetActive(false);
-		SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
+		SceneManager.LoadScene("MainScene", LoadSceneMode.Single);
 	}
 
 	public void RestartGame(){
 		Time.timeScale = 1;
-		SceneManager.LoadScene("Matuteale", LoadSceneMode.Single);
+		SceneManager.LoadScene("MainScene", LoadSceneMode.Single);
 	}
 
-	public void ShowGameEndedPanel(string winnerText){
+  public void QuitGame(){
+		Application.Quit();
+	}
+
+	public void ShowGameEndedPanel(string highscore){
 		Time.timeScale = 0;
 		GameEndedPanel.SetActive(true);
-		GameObject.Find("EndGameText").GetComponent<Text>().text = winnerText;
+		GameObject.Find("EndGameHighscore").GetComponent<TextMeshProUGUI>().SetText(highscore.ToString());
 	}
 }

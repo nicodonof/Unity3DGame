@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1163833789970892}
+  m_IsPrefabAsset: 1
+--- !u!1 &1163833789970892
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4491429540816126}
+  - component: {fileID: 114926885481324430}
+  m_Layer: 0
+  m_Name: LevelManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4491429540816126
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1163833789970892}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.10309426, y: 0.28604904, z: -0.07783362}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114926885481324430
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1163833789970892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 492f37d84bdcb3a4d9a0d47332858d58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chunkSize: 50
+  block: {fileID: 1729683663044672, guid: 48b54926f98b6074a912a05724c828af, type: 2}
+  left: {fileID: 1863101600738782, guid: bf055daa5550a384e8922d3d421ca072, type: 2}
+  right: {fileID: 1620041190640924, guid: eaa72fc3612e24e46a61a01044455192, type: 2}
+  floor_one: {fileID: 1013861145917188, guid: 4b8d5d46d42e94d478f6ad3cc05eee1c, type: 2}
+  plat_middle: {fileID: 1445997614204790, guid: 7ff5a63b7f8ceb0408fb634d2c924a8f,
+    type: 2}
+  plat_left: {fileID: 1312874714048172, guid: 8258d21236f057c48b2675514045190b, type: 2}
+  plat_right: {fileID: 1419760887424198, guid: 4239e6d8b14b6014cb20bb4eba8575dc, type: 2}
+  plat_one: {fileID: 1223621686399952, guid: 764fd6488ca70b24c8f3cca79c561c2f, type: 2}
+  player: {fileID: 0}
+  firstBlockReference: {fileID: 0}

@@ -1,2 +1,2 @@
-# Unity3DGame
-3D Game for Instituto de Bueno Aires videogame starter class.
+# Unity2DProcedural
+Precedurally generated 2D Unity game
